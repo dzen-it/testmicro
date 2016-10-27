@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service second {
+	rpc Get(GetRequest) returns (GetResponse);
+}
+
+message GetRequest {
+	string name = 1;
+}
+
+message GetResponse {
+	string resp =1;
+}
